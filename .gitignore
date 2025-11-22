@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Dataset (trop volumineux)
+dataset_detection_poubelle/train/
+dataset_detection_poubelle/valid/
+dataset_detection_poubelle/test/
+
+# Garder seulement la configuration
+!dataset_detection_poubelle/data.yaml
+!dataset_detection_poubelle/README.*
+
+# Modèles entraînés (trop gros)
+*.pt
+*.pth
+*.weights
+best.pt
+last.pt
+
+# Résultats d'entraînement
+runs/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

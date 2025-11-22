@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: ['poubelle_pleine', 'poubelle_vide']
+
+roboflow:
+  workspace: poubelledetection
+  project: detection_poubelle-6b1qv
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/poubelledetection/detection_poubelle-6b1qv/dataset/1
