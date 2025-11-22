@@ -18,14 +18,22 @@ dataset_detection_poubelle/test/
 !dataset_detection_poubelle/README.*
 
 # Modèles entraînés (trop gros)
-*.pt
+# *.pt
 *.pth
 *.weights
-best.pt
+# best.pt
 last.pt
 
 # Résultats d'entraînement
-runs/
+# runs/
+runs/*
+!runs/detect/
+runs/detect/*
+!runs/detect/poubelle_pleine_vide7/
+runs/detect/poubelle_pleine_vide7/*
+!runs/detect/poubelle_pleine_vide7/weights/
+runs/detect/poubelle_pleine_vide7/weights/*
+!runs/detect/poubelle_pleine_vide7/weights/best.pt
 
 # Virtual Environment
 .venv/
